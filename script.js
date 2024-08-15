@@ -465,8 +465,8 @@ const oneSlider = function () {
 ///////////////////////////////////////////////////////////
 // Media queries: when
 
-const two = window.matchMedia("(23.5rem < width <= 37rem");
-const one = window.matchMedia("(max-width: 23.5rem)");
+const two = window.matchMedia("(27rem < width <= 37rem");
+const one = window.matchMedia("(max-width: 27rem)");
 const three = window.matchMedia("(37rem < width");
 const hobbies = document.querySelector(".hobbies");
 function checkMediaQueries() {

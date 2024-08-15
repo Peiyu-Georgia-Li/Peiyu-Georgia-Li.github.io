@@ -324,8 +324,6 @@
 	.two .hobby {
 		width: 45%;
 	}
-
-   
 }
 
 /***********************************/
@@ -362,6 +360,10 @@
 	.hero-btn {
 		display: flex;
 		justify-content: center;
+		align-items: center;
+	}
+	.hero-message {
+		margin-bottom: 0;
 	}
 	.btn,
 	.btn:link,
@@ -460,6 +462,9 @@
 	.education-container {
 		left: 15%;
 	}
+	.one .hobby {
+		width: 80%;
+	}
 }
 
 /***********************************/
@@ -494,6 +499,9 @@
 		justify-content: center;
 		align-items: center;
 	}
+	.hero-message {
+		margin-bottom: 1.6rem;
+	}
 	.margin-right-sm {
 		margin-right: 0;
 	}
@@ -505,9 +513,6 @@
 	.facts-container {
 		padding: 2.8rem;
 	}
-    .one .hobby {
-        width: 80%;
-    }
 }
 
 /***********************************/
