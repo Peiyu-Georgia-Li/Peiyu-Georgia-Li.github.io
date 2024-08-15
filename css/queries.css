@@ -361,6 +361,8 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		align-self: center;
+		justify-self: center;
 	}
 	.hero-message {
 		margin-bottom: 0;
