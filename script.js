@@ -20,7 +20,7 @@ btnNavEl.addEventListener("click", function () {
 // Smooth scrolling animation
 
 const allLinks = document.querySelectorAll(
-	".header-left a:link, .hero-text-box a:link, .footer-link:link"
+	".header-left a:link, .hero-message:link, .footer-link:link"
 );
 
 allLinks.forEach(function (link) {
