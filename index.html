@@ -51,6 +51,10 @@
 			href="css/queries.css"
 		/>
 
+		<!-- Firebase SDK -->
+		<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+
 		<script
 			type="module"
 			src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
@@ -69,7 +73,7 @@
 			src="script.js"
 		></script>
 
-		<title>Georgia Personal Website</title>
+		<title>Peiyu (Georgia) Li - Personal Website</title>
 	</head>
 
 	<body>
@@ -1409,12 +1413,20 @@
 						Click the button below and let's spread some positivity together! 😘
 						💕
 					</p>
-					<div class="like-button">
+					<div
+						class="like-button"
+						id="likeButton"
+					>
 						<div class="heart-bg">
 							<div class="heart-icon"></div>
 						</div>
 						<span class="like-amount-text">Like Amount: </span>
-						<span class="likes-amount"> 999</span>
+						<span
+							class="likes-amount"
+							id="likeCount"
+						>
+							999</span
+						>
 					</div>
 				</div>
 
@@ -1608,6 +1620,48 @@
 				if (e.key === "Escape" && modal.style.display === "block") {
 					modal.style.display = "none";
 				}
+			});
+
+			// Firebase Configuration and Like Button Functionality
+			// TODO: Replace with your Firebase config from Firebase Console
+			const firebaseConfig = {
+				apiKey: "AIzaSyCIE0yafd2nIPe61Id7pd7gjvbnbHXboao",
+				authDomain: "peiyu-georgia-li-website.firebaseapp.com",
+				databaseURL:
+					"https://peiyu-georgia-li-website-default-rtdb.firebaseio.com",
+				projectId: "peiyu-georgia-li-website",
+				storageBucket: "peiyu-georgia-li-website.firebasestorage.app",
+				messagingSenderId: "1087669297818",
+				appId: "1:1087669297818:web:979ed545cdec288c243523",
+			};
+
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+			const database = firebase.database();
+			const likesRef = database.ref("likes");
+
+			// Get elements
+			const likeButton = document.getElementById("likeButton");
+			const likeCount = document.getElementById("likeCount");
+
+			// Initialize like count from Firebase
+			likesRef.on("value", (snapshot) => {
+				const count = snapshot.val() || 999;
+				likeCount.textContent = count;
+			});
+
+			// Handle like button click
+			likeButton.addEventListener("click", function () {
+				// Add animation
+				this.classList.add("liked");
+				setTimeout(() => {
+					this.classList.remove("liked");
+				}, 600);
+
+				// Increment like count in Firebase
+				likesRef.transaction((currentLikes) => {
+					return (currentLikes || 999) + 1;
+				});
 			});
 		</script>
 	</body>
