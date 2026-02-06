@@ -325,6 +325,12 @@
 	.two .hobby {
 		width: 45%;
 	}
+	.education-time-icon {
+		width: 2.2rem;
+		height: 2.2rem;
+		min-width: 2.2rem;
+		min-height: 2.2rem;
+	}
 }
 
 /***********************************/
@@ -519,12 +525,13 @@
 	.heading-tertiary {
 		font-size: 1.8rem;
 	}
-	.education-degree{
+	.education-degree {
 		font-size: 1.6rem;
 	}
-	.education-school{
+	.education-school {
 		font-size: 1rem;
 	}
+
 }
 
 /***********************************/
