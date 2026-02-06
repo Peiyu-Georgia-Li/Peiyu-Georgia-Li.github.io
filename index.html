@@ -98,8 +98,8 @@
 						<li>
 							<a
 								class="main-nav-link"
-								href="#skills"
-								>Skills</a
+								href="#projects"
+								>Projects</a
 							>
 						</li>
 						<li>
@@ -201,7 +201,8 @@
 									style="color: inherit; text-decoration: underline"
 									>Prof. Nitesh V. Chawla</a
 								></strong
-							> in the
+							>
+							in the
 							<strong
 								><a
 									href="https://lucyinstitute.nd.edu/centers-and-labs/data-inference-analytics-and-learning-dial-lab/"
@@ -680,6 +681,124 @@
 					</div>
 				</div>
 			</section>
+
+			<!-- Section Projects -->
+			<section
+				class="section-projects"
+				id="projects"
+			>
+				<div class="container">
+					<div class="center-text">
+						<span class="subheading">Projects</span>
+						<h2 class="heading-secondary">Technical Projects</h2>
+					</div>
+
+					<div class="projects-container">
+						<!-- Project 1: AR LLM System -->
+						<div class="project-item">
+							<div class="project-header">
+								<h3 class="project-title">On-Device AR LLM System</h3>
+								<div class="project-links">
+									<a
+										href="https://github.com/JinZhou5042/whisper-audio-streaming"
+										class="project-link-btn"
+										target="_blank"
+									>
+										<ion-icon
+											name="logo-github"
+											class="link-icon"
+										></ion-icon>
+										Code
+									</a>
+									<a
+										href="https://docs.google.com/presentation/d/1kwOAvmbxrs-WjJuQ3BSwxwgLlCzUIImc/edit?slide=id.p1#slide=id.p1"
+										class="project-link-btn"
+										target="_blank"
+									>
+										<ion-icon
+											name="videocam"
+											class="link-icon"
+										></ion-icon>
+										Demo
+									</a>
+								</div>
+							</div>
+							<div class="project-tags">
+								<span class="tag">Embedded AI</span>
+								<span class="tag">Quantization</span>
+								<span class="tag">Edge Computing</span>
+							</div>
+							<ul class="project-details">
+								<li>
+									Built offline real-time STT AR glasses system integrating
+									ESP32-S3 (audio capture), Raspberry Pi 4, and Brilliant Labs
+									Frame (display), achieving
+									<strong>&lt; 5s latency</strong> per 6s speech segment with
+									<strong>&lt; 210MB memory usage</strong>.
+								</li>
+								<li>
+									Reduced inference latency by <strong>42%</strong> through
+									Whisper.cpp quantization and thread optimization, achieving
+									real-time, privacy-preserving on-device STT.
+								</li>
+							</ul>
+						</div>
+
+						<!-- Project 2: TeachingCoach -->
+						<div class="project-item">
+							<div class="project-header">
+								<h3 class="project-title">
+									TeachingCoach — Pedagogical LLM Systems
+								</h3>
+								<div class="project-links">
+									<a
+										href="https://github.com/Peiyu-Georgia-Li/teachingCoach"
+										class="project-link-btn"
+										target="_blank"
+									>
+										<ion-icon
+											name="logo-github"
+											class="link-icon"
+										></ion-icon>
+										Code
+									</a>
+									<a
+										href="https://drive.google.com/file/d/1wazH-YJ94SfMmaGff0Pmj-KhDnyrZe1H/view?usp=sharing"
+										class="project-link-btn"
+										target="_blank"
+									>
+										<ion-icon
+											name="videocam"
+											class="link-icon"
+										></ion-icon>
+										Demo
+									</a>
+								</div>
+							</div>
+							<div class="project-tags">
+								<span class="tag">Fine-tuning</span>
+								<span class="tag">Model Deployment</span>
+								<span class="tag">Deepspeed</span>
+							</div>
+							<ul class="project-details">
+								<li>
+									Built TeachingCoach, a pedagogical LLM system developed for
+									<strong>active use by Notre Dame instructors</strong> in
+									collaboration with NDLearning (Teaching Innovation Office).
+								</li>
+								<li>
+									Fine-tuned LLaMA-13B with structured pedagogical data,
+									<strong>surpassing GPT-4o</strong> in instructional quality.
+								</li>
+								<li>
+									Deployed on AWS and validated through an HCI user study.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<!-- Section Education -->
 			<section
 				class="section-education"
@@ -1519,8 +1638,8 @@
 							<li>
 								<a
 									class="footer-link"
-									href="#skills"
-									>Skills</a
+									href="#projects"
+									>Projects</a
 								>
 							</li>
 							<li>
