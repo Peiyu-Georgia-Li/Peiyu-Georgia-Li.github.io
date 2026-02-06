@@ -7,7 +7,7 @@
 	.hero {
 		max-width: 120rem;
 	}
-	.project-img {
+	.publication-img {
 		width: 55rem;
 	}
 }
@@ -59,8 +59,7 @@
 		max-width: 110rem;
 	}
 	.section-hero,
-	.section-skills,
-	.section-project,
+	.section-publication,
 	.section-education,
 	.seciton-hobbies,
 	.section-cta,
@@ -71,11 +70,11 @@
 	.section-education {
 		padding-bottom: 7.4rem;
 	}
-	.project-img {
+	.publication-img {
 		width: 50rem;
 	}
-	.project-link:link,
-	.project-link:visited {
+	.publication-title a:link,
+	.publication-title a:visited {
 		font-size: 2.4rem;
 	}
 }
@@ -91,10 +90,11 @@
 		max-width: 100rem;
 	}
 
-	.project-img {
+	.publication-img {
 		width: 45rem;
 	}
-	.project-description {
+	.publication-authors,
+	.publication-venue {
 		font-size: 1.6rem;
 	}
 	.hobby-title {
@@ -118,8 +118,8 @@
 		margin-top: 2rem;
 		font-size: 1.2rem;
 	}
-	.project-link:link,
-	.project-link:visited {
+	.publication-title a:link,
+	.publication-title a:visited {
 		font-size: 2.8rem;
 	}
 	.grid {
@@ -139,15 +139,15 @@
 		margin-bottom: 4.8rem;
 	}
 	.heading-tertiary,
-	.project-link:link,
-	.project-link:visited {
+	.publication-title a:link,
+	.publication-title a:visited {
 		font-size: 2.4rem;
 	}
 	.hero,
 	.container {
 		max-width: 90rem;
 	}
-	.project-img {
+	.publication-img {
 		width: 40rem;
 	}
 	.main-nav-list {
@@ -175,7 +175,7 @@
 		max-width: 90rem;
 	}
 
-	.project-img {
+	.publication-img {
 		width: 38rem;
 	}
 }
@@ -219,31 +219,32 @@
 		line-height: 1.2;
 	}
 	.heading-tertiary,
-	.project-link:link,
-	.project-link:visited {
-		font-size: 3rem;
+	.publication-title a:link,
+	.publication-title a:visited {
+		font-size: 2.2rem;
 	}
-	.project-container {
-		grid-template-columns: 1fr;
+	.publication-title {
+		font-size: 2.2rem;
+	}
+	.publication-item {
+		flex-direction: column;
 		gap: 2rem;
-		justify-content: center;
-		padding: 0 5.2rem 0 5.2rem;
+		padding: 0 5.2rem;
 	}
-	.project-img {
-		width: 90%;
-		margin-bottom: 5.2rem;
+	.publication-img-box {
+		width: 100% !important;
+		height: auto !important;
+		margin-bottom: 2rem;
 	}
-	.project-img-box:nth-child(3) {
-		grid-row: 4;
-	}
-	.section-projects {
-		padding-bottom: 0;
+	.section-publications {
+		padding-bottom: 2rem;
 	}
 
-	.project-description {
+	.publication-authors,
+	.publication-venue {
 		font-size: 2rem;
 	}
-	.project-tags {
+	.publication-link-btn {
 		font-size: 1.8rem;
 	}
 	.journey {
@@ -512,8 +513,17 @@
 	.list-item {
 		font-size: 1.6rem;
 	}
+	.heading-tertiary,
+	.publication-title a:link,
+	.publication-title a:visited,
 	.heading-tertiary {
-		font-size: 2.2rem;
+		font-size: 1.8rem;
+	}
+	.education-degree{
+		font-size: 1.6rem;
+	}
+	.education-school{
+		font-size: 1rem;
 	}
 }
 
