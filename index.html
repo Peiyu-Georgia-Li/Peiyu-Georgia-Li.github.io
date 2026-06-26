@@ -91,6 +91,13 @@
 						<li>
 							<a
 								class="main-nav-link"
+								href="#news"
+								>News</a
+							>
+						</li>
+						<li>
+							<a
+								class="main-nav-link"
 								href="#publications"
 								>Publications</a
 							>
@@ -233,6 +240,192 @@
 							class="hero-img"
 							alt="Georgia with flowers"
 						/>
+					</div>
+				</div>
+			</section>
+
+			<!-- Section News -->
+			<section class="section-news" id="news" style="padding: 4.8rem 0 6.4rem 0; background-color: #fff;">
+				<style>
+					@keyframes sticky-cards-scroll {
+						0%   { transform: translateX(0); }
+						100% { transform: translateX(-50%); }
+					}
+					.sticky-scroll-outer {
+						overflow: hidden;
+						padding: 2rem 0 3.2rem;
+					}
+					.sticky-scroll-track {
+						display: flex;
+						gap: 4rem;
+						padding: 1.6rem 4rem;
+						width: max-content;
+						animation: sticky-cards-scroll 22s linear infinite;
+					}
+					.sticky-scroll-outer:hover .sticky-scroll-track {
+						animation-play-state: paused;
+					}
+					.sticky-note {
+						position: relative;
+						padding: 3.2rem 2.4rem 4.4rem;
+						border-radius: 2px;
+						width: 26rem;
+						flex-shrink: 0;
+						box-shadow: 4px 5px 18px rgba(0,0,0,0.14), -1px -1px 4px rgba(0,0,0,0.05);
+						transition: transform 0.25s ease, box-shadow 0.25s ease;
+						cursor: default;
+						z-index: 1;
+					}
+					.sticky-note:hover {
+						transform: rotate(0deg) scale(1.06) translateY(-8px) !important;
+						box-shadow: 8px 14px 32px rgba(0,0,0,0.18);
+						z-index: 10;
+					}
+					.sticky-note-pin {
+						position: absolute;
+						top: -12px;
+						left: 50%;
+						transform: translateX(-50%);
+						width: 20px;
+						height: 20px;
+						background: radial-gradient(circle at 38% 35%, #ff7e7e, #c0392b);
+						border-radius: 50%;
+						box-shadow: 0 2px 8px rgba(0,0,0,0.4), inset 0 1px 2px rgba(255,255,255,0.3);
+						z-index: 2;
+					}
+					.sticky-note-icon {
+						font-size: 3rem;
+						margin-bottom: 1.2rem;
+						display: block;
+					}
+					.sticky-note-category {
+						font-size: 1.1rem;
+						font-weight: 700;
+						text-transform: uppercase;
+						letter-spacing: 1px;
+						color: rgba(0,0,0,0.38);
+						margin-bottom: 0.8rem;
+					}
+					.sticky-note-title {
+						font-size: 1.75rem;
+						font-weight: 700;
+						color: #1a1a1a;
+						line-height: 1.35;
+						margin-bottom: 0.8rem;
+					}
+					.sticky-note-desc {
+						font-size: 1.4rem;
+						color: rgba(0,0,0,0.52);
+						line-height: 1.5;
+					}
+					.sticky-note-date {
+						font-size: 1.25rem;
+						color: rgba(0,0,0,0.38);
+						font-style: italic;
+						position: absolute;
+						bottom: 1.8rem;
+						right: 2.4rem;
+					}
+				</style>
+
+				<div class="container">
+					<span class="subheading">News</span>
+					<h2 class="heading-secondary" style="margin-bottom: 2.4rem;">Recent Updates</h2>
+				</div>
+
+				<!-- Scrolling sticky notes (full width) -->
+				<div class="sticky-scroll-outer">
+					<div class="sticky-scroll-track">
+
+						<!-- ── Set 1 ── -->
+						<!-- Yellow: Work -->
+						<div class="sticky-note" style="background: #fff9b0; transform: rotate(-2.5deg);">
+							<div class="sticky-note-pin"></div>
+							<ion-icon name="briefcase" class="sticky-note-icon" style="color: #b45309;"></ion-icon>
+							<p class="sticky-note-category">Work</p>
+							<p class="sticky-note-title">AI Research Intern · Siemens</p>
+							<p class="sticky-note-desc">Seattle, WA</p>
+							<span class="sticky-note-date">Jun 2026</span>
+						</div>
+						<!-- Teal: Paper -->
+						<div class="sticky-note" style="background: #fecdd3; transform: rotate(1.8deg);">
+							<div class="sticky-note-pin"></div>
+							<ion-icon name="star" class="sticky-note-icon" style="color: #9f1239;"></ion-icon>
+							<p class="sticky-note-category">Paper Accepted · Spotlight 2.2%</p>
+							<p class="sticky-note-title">ICML 2026 Spotlight</p>
+							<p class="sticky-note-desc">ATLAS: Adaptive Testing for LLM Evaluation</p>
+							<span class="sticky-note-date">Apr 2026</span>
+						</div>
+						<!-- Teal: Paper -->
+						<div class="sticky-note" style="background: #fecdd3; transform: rotate(-1.2deg);">
+							<div class="sticky-note-pin"></div>
+							<ion-icon name="document-text" class="sticky-note-icon" style="color: #9f1239;"></ion-icon>
+							<p class="sticky-note-category">Paper Accepted · Main Track</p>
+							<p class="sticky-note-title">ACL 2026 Main</p>
+							<p class="sticky-note-desc">CrochetBench: Can VLMs move from describing to doing?</p>
+							<span class="sticky-note-date">Apr 2026</span>
+						</div>
+						<!-- Green: Education -->
+						<div class="sticky-note" style="background: #d1fae5; transform: rotate(2.2deg);">
+							<div class="sticky-note-pin"></div>
+							<ion-icon name="book" class="sticky-note-icon" style="color: #065f46;"></ion-icon>
+							<p class="sticky-note-category">Education</p>
+							<p class="sticky-note-title">PhD Journey Begins</p>
+							<p class="sticky-note-desc">CS @ University of Notre Dame</p>
+							<span class="sticky-note-date">Jan 2026</span>
+						</div>
+						<!-- Green: Education -->
+						<div class="sticky-note" style="background: #d1fae5; transform: rotate(-1.8deg);">
+							<div class="sticky-note-pin"></div>
+							<ion-icon name="ribbon" class="sticky-note-icon" style="color: #065f46;"></ion-icon>
+							<p class="sticky-note-category">Education</p>
+							<p class="sticky-note-title">Master's Degree Completed</p>
+							<p class="sticky-note-desc">GPA 3.93 / 4.0, Notre Dame</p>
+							<span class="sticky-note-date">May 2025</span>
+						</div>
+
+						<!-- ── Set 2 (duplicate for seamless loop) ── -->
+						<div class="sticky-note" style="background: #fff9b0; transform: rotate(-2deg);">
+							<div class="sticky-note-pin"></div>
+							<ion-icon name="briefcase" class="sticky-note-icon" style="color: #b45309;"></ion-icon>
+							<p class="sticky-note-category">Work</p>
+							<p class="sticky-note-title">AI Research Intern · Siemens</p>
+							<p class="sticky-note-desc">Seattle, WA</p>
+							<span class="sticky-note-date">Jun 2026</span>
+						</div>
+						<div class="sticky-note" style="background: #fecdd3; transform: rotate(2.2deg);">
+							<div class="sticky-note-pin"></div>
+							<ion-icon name="star" class="sticky-note-icon" style="color: #9f1239;"></ion-icon>
+							<p class="sticky-note-category">Paper Accepted · Spotlight 2.2%</p>
+							<p class="sticky-note-title">ICML 2026 Spotlight</p>
+							<p class="sticky-note-desc">ATLAS: Adaptive Testing for LLM Evaluation</p>
+							<span class="sticky-note-date">Apr 2026</span>
+						</div>
+						<div class="sticky-note" style="background: #fecdd3; transform: rotate(-0.8deg);">
+							<div class="sticky-note-pin"></div>
+							<ion-icon name="document-text" class="sticky-note-icon" style="color: #9f1239;"></ion-icon>
+							<p class="sticky-note-category">Paper Accepted · Main Track</p>
+							<p class="sticky-note-title">ACL 2026 Main</p>
+							<p class="sticky-note-desc">CrochetBench: Can VLMs move from describing to doing?</p>
+							<span class="sticky-note-date">Apr 2026</span>
+						</div>
+						<div class="sticky-note" style="background: #d1fae5; transform: rotate(1.5deg);">
+							<div class="sticky-note-pin"></div>
+							<ion-icon name="book" class="sticky-note-icon" style="color: #065f46;"></ion-icon>
+							<p class="sticky-note-category">Education</p>
+							<p class="sticky-note-title">PhD Journey Begins</p>
+							<p class="sticky-note-desc">CS @ University of Notre Dame</p>
+							<span class="sticky-note-date">Jan 2026</span>
+						</div>
+						<div class="sticky-note" style="background: #d1fae5; transform: rotate(-2.3deg);">
+							<div class="sticky-note-pin"></div>
+							<ion-icon name="ribbon" class="sticky-note-icon" style="color: #065f46;"></ion-icon>
+							<p class="sticky-note-category">Education</p>
+							<p class="sticky-note-title">Master's Degree Completed</p>
+							<p class="sticky-note-desc">GPA 3.93 / 4.0, Notre Dame</p>
+							<span class="sticky-note-date">May 2025</span>
+						</div>
+
 					</div>
 				</div>
 			</section>
@@ -400,7 +593,7 @@
 							<img
 								src="img/crochet-case.png"
 								class="publication-img"
-								alt="crochetBench paper preview"
+								alt="CrochetBench paper preview"
 								style="
 									width: 100%;
 									height: 100%;
@@ -454,7 +647,7 @@
 									font-style: italic;
 								"
 							>
-								arXiv preprint 2025
+								ACL 2026 Main
 							</p>
 							<div
 								class="publication-links"
@@ -576,7 +769,7 @@
 									font-style: italic;
 								"
 							>
-								arXiv preprint 2025
+								ICML 2026 Spotlight (top 2.2%)
 							</p>
 							<div
 								class="publication-links"
