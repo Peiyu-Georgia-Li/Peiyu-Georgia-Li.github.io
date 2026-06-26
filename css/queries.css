@@ -554,6 +554,96 @@
 }
 
 /***********************************/
+/* News section - sticky notes responsive */
+/***********************************/
+
+/* Tablet (~768px) */
+@media (max-width: 48rem) {
+	.sticky-note {
+		width: 28rem;
+		padding: 2.8rem 2rem 4rem;
+	}
+	.sticky-scroll-track {
+		gap: 2.8rem;
+	}
+}
+
+/* Reduce gap between News and Publications on smaller screens */
+@media (max-width: 57rem) {
+	.section-news {
+		padding-bottom: 4rem !important;
+	}
+	.section-publications {
+		padding-top: 5.6rem;
+	}
+}
+
+/* Mobile nav breakpoint (~592px) */
+@media (max-width: 37rem) {
+	.section-news {
+		padding-bottom: 2.4rem !important;
+	}
+	.section-publications {
+		padding-top: 3.2rem;
+	}
+	.sticky-note {
+		width: 32rem;
+	}
+	.sticky-note-title {
+		font-size: 2.4rem;
+	}
+	.sticky-note-category {
+		font-size: 1.4rem;
+		letter-spacing: 0.5px;
+	}
+	.sticky-note-desc {
+		font-size: 1.9rem;
+	}
+	.sticky-note-date {
+		font-size: 1.6rem;
+	}
+	.sticky-note-icon {
+		font-size: 3.6rem;
+	}
+	.sticky-scroll-track {
+		gap: 2.4rem;
+		padding: 1.6rem 2.4rem;
+	}
+}
+
+/* Small mobile (~512px) */
+@media (max-width: 32rem) {
+	.sticky-note {
+		width: 38rem;
+		padding: 2.8rem 2.2rem 4.4rem;
+	}
+	.sticky-note-title {
+		font-size: 2.8rem;
+	}
+	.sticky-note-category {
+		font-size: 1.6rem;
+	}
+	.sticky-note-desc {
+		font-size: 2.2rem;
+	}
+	.sticky-note-date {
+		font-size: 1.9rem;
+		bottom: 2rem;
+	}
+	.sticky-note-icon {
+		font-size: 4rem;
+		margin-bottom: 1.4rem;
+	}
+	.sticky-scroll-track {
+		gap: 2.8rem;
+		padding: 1.8rem 3.2rem;
+	}
+	.section-news {
+		padding-bottom: 4.8rem;
+	}
+}
+
+/***********************************/
 /* Below 320px (for smaller desktops */
 /***********************************/
 @media (max-width: 20rem) {
